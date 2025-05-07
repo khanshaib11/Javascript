@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Function Excercise</title>
+</head>
+<body>
+    
+    <script>
+
+/*
+
+ 
+        function greet(name) {
+        console.log(`greetings ${name}`);
+        }
+        greet('ilyas');
+        greet('almas');
+*/
+
+/*
+        function convertToFahrenheit(celsius) {
+        let fahrenheit = (celsius * 9 / 5) + 32;
+    
+        return fahrenheit;
+    
+        }
+        console.log(convertToFahrenheit(25));
+        
+*/
+
+/*      function convertToCelsius(fahrenheit)
+        {
+        let Celsius = (fahrenheit - 32) * 5 / 9 ;
+            return Celsius;
+
+        }
+        console.log(convertToCelsius(86));
+*/
+/*
+        function convertTemperature(degrees, unit) 
+        {
+            if (unit === 'C') {
+                let celsius = (degrees - 32) * 5 / 9;
+                return celsius;
+            }
+            else if (unit === 'F') {
+                let fahrenheit = (degrees * 9 / 5) + 32;
+                return fahrenheit;
+            }
+            else 
+            {
+                console.log("Please Try Again :");
+                return null;
+            }
+        }
+        console.log(convertTemperature(86, 'C')); // Convert 86°F to Celsius
+*/
+ 
+/*
+        function convertLength(length,from,to)
+       {
+        if (from === 'miles'){
+            return length * 1.6;
+        } 
+        else if (from === 'km'){
+            return length / 1.6;
+        }
+        else {
+            console.log("Please Write correct value ");
+            return null;
+        }
+
+
+       } 
+      console.log(convertLength(50,'miles','km'));
+*/
+       
+        function convertLength (length, from, to) {
+        if (from === 'miles' && to === 'km'){
+            return length * 1.6;
+        }
+        else if (from === 'miles' && to === 'ft'){
+            return length * 5280;
+        }
+        else if (from === 'km' && to === 'ft'){
+            return length * 3281;
+        }
+        else if (from === 'km' && to === 'miles'){
+            return length / 1.6;
+        }
+        else {
+            console.log("please put correct ");
+            return null;
+        }
+    }
+
+    console.log(convertLength(10, 'km', 'miles'));
+
+
+
+
+
+    </script>
+</body>
+</html>
