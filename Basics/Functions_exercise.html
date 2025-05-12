@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Function Excercise</title>
-</head>
-<body>
-    
+<html>
+  <head></head>
+  <body>
+    <p>
+      <button onclick="
+        calculation += '1';
+        
+      ">1</button>
+
+      <button onclick="
+        calculation += '2';
+        console.log(calculation);
+      ">2</button>
+
+      <button onclick="
+        calculation += '3';
+        console.log(calculation);
+      ">3</button>
+
+      <button onclick="
+        calculation += ' + ';
+        console.log(calculation);
+      ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '4';
+        console.log(calculation);
+      ">4</button>
+
+      <button onclick="
+        calculation += '5';
+        console.log(calculation);
+      ">5</button>
+
+      <button onclick="
+        calculation += '6';
+        console.log(calculation);
+      ">6</button>
+
+      <button onclick="
+        calculation += ' - ';
+        console.log(calculation);
+      ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '7';
+        console.log(calculation);
+      ">7</button>
+
+      <button onclick="
+        calculation += '8';
+        console.log(calculation);
+      ">8</button>
+
+      <button onclick="
+        calculation += '9';
+        console.log(calculation);
+      ">9</button>
+
+      <button onclick="
+        calculation += ' * ';
+        console.log(calculation);
+      ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '0';
+        console.log(calculation);
+      ">0</button>
+
+      <button onclick="
+        calculation += '.';
+        console.log(calculation);
+      ">.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        console.log(calculation);
+      ">=</button>
+
+      <button onclick="
+        calculation += ' / ';
+        console.log(calculation);
+      ">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+        console.log('Cleared.');
+      ">Clear</button>
+    </p>
+
+   
     <script>
 
 /*
@@ -76,7 +171,8 @@
        } 
       console.log(convertLength(50,'miles','km'));
 */
-       
+
+/*
         function convertLength (length, from, to) {
         if (from === 'miles' && to === 'km'){
             return length * 1.6;
@@ -97,7 +193,18 @@
     }
 
     console.log(convertLength(10, 'km', 'miles'));
+*/
 
+
+
+      let calculation = '';
+
+      function updateCalculation (calculation) 
+      {
+        console.log(calculation);
+
+      }
+    
 
 
 
